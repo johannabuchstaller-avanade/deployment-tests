@@ -1,8 +1,13 @@
 # test-addcol.py
 import pytest
+import os
+import sys
 
 from pyspark.sql import SparkSession
 from .addcol import with_status
+
+os.environ['PYSPARK_PYTHON'] = sys.executable
+os.environ['PYSPARK_DRIVER_PYTHON'] = sys.executable
 
 @pytest.fixture
 def spark() -> SparkSession:
