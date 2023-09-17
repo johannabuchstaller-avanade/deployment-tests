@@ -10,7 +10,7 @@ import os
 
 class TestJobOutput(unittest.TestCase):
 
-  test_output_path = '<path-to-json-logs-on-release-agent>'
+  test_output_path = '/home/vsts/work/r1/a/_johannabuchstaller-avanade.deployment-tests/Databricks/logs/json/'
 
   def test_performance(self):
     path = self.test_output_path
